@@ -1,0 +1,25 @@
+#body {
+    margin: 0;
+    overflow: hidden;
+    height: auto;
+    width: auto;
+ }
+ 
+ #quokkaImage {
+    position: relative;
+    cursor: pointer;
+    height: 500px;
+    width: 500px;
+ }
+ .display{
+    height: 1000;
+    width: 1000;
+    position: relative;
+ }
+
+ #information{
+    background-color:brown;
+    height:100%;
+    max-width: 500px;
+ }
+
