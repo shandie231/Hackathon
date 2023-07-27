@@ -1,4 +1,6 @@
 #body {
+   display:flex;
+   justify-content: flex-center;
     margin: 0;
     overflow: hidden;
     height: auto;
@@ -12,14 +14,20 @@
     width: 500px;
  }
  .display{
-    height: 1000;
-    width: 1000;
+    height: 600px;
+    width: 1000px;
     position: relative;
  }
 
  #information{
-    background-color:brown;
-    height:100%;
-    max-width: 500px;
+   height:auto;
+   width:auto;
+ }
+
+ #quokkaGif{
+   position: relative;
+    cursor: pointer;
+    height: 500px;
+    width: 500px;
  }
 

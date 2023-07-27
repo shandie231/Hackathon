@@ -2,11 +2,17 @@ document.addEventListener('DOMContentLoaded', () =>{
     const body = document.querySelector('body');
     const display = document.querySelector('.display');
     const quokka = new Quokka(display);
+    
+    const quokkaGif = new QuokkaGif(display);
+    quokkaGif.cycleQuokka();
+
+   
 
     body.addEventListener('click', () =>{
         
         quokka.changeQuokka()});
 
+        
     let getDataPromise = fetch('https://api.api-ninjas.com/v1/animals?name=Quokka',{ 
     method: "GET",
     headers: {
@@ -14,6 +20,8 @@ document.addEventListener('DOMContentLoaded', () =>{
     })
     getDataPromise = getDataPromise.then(data => data.json());
     getDataPromise.then(data => populateInformation(data));
+
+  
 });
 
 function populateInformation(data){

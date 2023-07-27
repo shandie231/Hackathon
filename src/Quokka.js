@@ -20,7 +20,6 @@ let quokkaImages = [
     ];
         let randomIndex = Math.floor(Math.random() * quokkaImages.length);
         quokka.setAttribute('src', quokkaImages[randomIndex]);
-    };
-
+    }
     
 }
